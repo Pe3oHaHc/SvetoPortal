@@ -17,9 +17,6 @@ import ru.svetobit.svetoportal.framework.Notion;
 
 import java.io.IOException;
 
-/**
- * Created by Иван on 28.05.2015.
- */
 public class ProjectWindow extends Stage
 {
 	Project mProject;
