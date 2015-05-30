@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar id="main_menu">
+        <menus>
+            <Menu mnemonicParsing="false" text="СветоСайт">
+              <items>
+                <MenuItem id="svetosite_exit" mnemonicParsing="false" text="Выйти" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Проект">
+            <items>
+              <MenuItem id="project_save" mnemonicParsing="false" text="Сохранить" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane id="main_tabs" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab id="site_structure_tab" closable="false" text="Структура сайта">
+               <content>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-: black;">
+                     <children>
+                        <VBox id="notions_list_container" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                           <children>
+                              <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <children>
+                                    <Hyperlink id="add_notion_link" text="Добавить" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <StackPane id="notion_area" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox id="notion_area_content" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+                                 <children>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                       <children>
+                                          <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <HBox>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" text="Английское название" />
+                                                      <Hyperlink alignment="CENTER" maxHeight="1.7976931348623157E308" text="Изменить">
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                      </Hyperlink>
+                                                   </children>
+                                                </HBox>
+                                                <HBox>
+                                                   <children>
+                                                      <Label id="eng_name" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Название">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label text="Произвольное название">
+                                                   <VBox.margin>
+                                                      <Insets bottom="1.0" top="2.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <TextField id="notion_custom_name">
+                                                   <VBox.margin>
+                                                      <Insets top="4.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <ToolBar id="toolbar" maxWidth="1.7976931348623157E308" styleClass="toolbar">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </ToolBar>
+                                    <ScrollPane id="notion_content_scrollpane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                       <content>
+                                          <VBox id="notion_content" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                       </content>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </ScrollPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </content>
+          </Tab>
+          <Tab id="admin_structure_tab" closable="false" text="Структура админки">
+               <content>
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </content>
+          </Tab>
+            <Tab closable="false" text="Встраивание">
+               <content>
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

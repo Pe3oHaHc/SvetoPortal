@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<letters>
+	<letter_types>
+		<type id="digits" name="Цифры">0-9</type>
+		<type id="english" name="Английские">A-Za-z</type>
+		<type id="russian" name="Русские">А-Яа-я</type>
+		<type id="bottom_line" name="Символ подчеркивания">_</type>
+		<type id="point" name="Точка">\.</type>
+		<type id="comma" name="Запятая">,</type>
+		<type id="plus" name="Плюс">+</type>
+		<type id="minus" name="Минус">-</type>
+	</letter_types>
+</letters>
